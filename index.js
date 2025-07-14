@@ -96,3 +96,20 @@ else
 {
     console.log("number is not prime")
 }
+
+console.log("10th program")
+
+function digit(dnum)
+{
+    return String(dnum).length;
+}
+let dnum1=12344
+console.log(digit(dnum1))
+
+// console.log("11th program")
+// const number=12
+// let sum=0
+// for(i=1;i<=number;i++)
+// {
+    
+// }
