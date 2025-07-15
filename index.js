@@ -106,10 +106,92 @@ function digit(dnum)
 let dnum1=12344
 console.log(digit(dnum1))
 
-// console.log("11th program")
-// const number=12
-// let sum=0
-// for(i=1;i<=number;i++)
-// {
-    
-// }
+
+console.log("11th program")
+
+function sumdigit(number)
+{
+    let sum=0;
+    let temp=Math.abs(number)
+    while(temp>0)
+    {
+        sum+=temp%10
+        temp=Math.floor(temp/10)
+    }
+    return sum
+}
+console.log(sumdigit(123))
+
+
+console.log("12th program")
+function armstrongnumber(number1)
+{
+    const numstr=String(number1)
+    const numdigit=numstr.length;
+    let sumofpower=0;
+    for(let i=0;i<numdigit;i++)
+    {
+        const digit=parseInt(numstr[i],10)
+        sumofpower+=Math.pow(digit,numdigit)
+    }
+    if(sumofpower==number1)
+    {
+        console.log(number1+" number is armstrong")
+    }
+    else
+    {
+        console.log(number1+" number is not armstrong") 
+    }
+} 
+console.log(armstrongnumber(153))
+
+
+console.log("13th program")
+let number2=5
+let a=0
+let b=1
+let c=0
+for(let i=0;i<number2;i++)
+{
+    console.log(a)
+    c=a+b
+    a=b
+    b=c
+}
+
+console.log("14th program")
+// let char=prompt("enter a character: ")
+let char="a"
+if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"||char==="A"||char==="E"||char==="I"||char==="O"||char==="U")
+{
+    console.log("it's a vowel.")
+}
+else
+{
+    console.log("it's a consonant.")   
+}
+
+console.log("15th program")
+let x=10
+let y=5
+let sum1=x+y
+console.log("sum:",sum1)
+let difference=x-y
+console.log("difference:",difference)
+let product=x*y
+console.log("product:",product)
+let quotient=x/y
+console.log("quotient:",quotient)
+
+console.log("16th program")
+function gcd(p,q)
+{
+    if(q==0)
+    {
+        return p;
+    }
+    return gcd(q,p%q) 
+}
+const a1=20
+const b1=28
+console.log(`gcd of ${a1} and ${b1} is: ${gcd(a1,b1)}`)
