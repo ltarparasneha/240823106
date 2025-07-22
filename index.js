@@ -198,7 +198,22 @@ else
 {
     console.log("it's a consonant.")   
 }
-
+let prompt = require('prompt');
+// let char = prompt("enter a character: "); 
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+rl.question("enter a character: ", function (char) {
+    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || 
+        char === "A" || char === "E" || char === "I" || char === "O" || char === "U") {
+        console.log("it's a vowel.");
+    } else {
+        console.log("it's a consonant.");
+    }
+    rl.close();
+});
 
 
 console.log("15th program")

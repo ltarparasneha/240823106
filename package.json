@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ltarparasneha/240823106/issues"
   },
-  "homepage": "https://github.com/ltarparasneha/240823106#readme"
+  "homepage": "https://github.com/ltarparasneha/240823106#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "path": "^0.12.7"
+  }
 }
